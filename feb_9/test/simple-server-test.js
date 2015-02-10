@@ -19,7 +19,7 @@ describe('our http server', function() {
       .end(function(err, res) {
         expect(err).to.eql(null);
         expect(res).to.have.status(200);
-        expect(res.text).to.eql('Last Sync: ' + currentdate.getDay()+ '/'+currentdate.getMonth() + '/' + currentdate.getFullYear() + ' @ ' + currentdate.getHours() + ':' + currentdate.getMinutes() + ':' + currentdate.getSeconds() + '\n');
+        expect(res.text).to.eql('Last Sync: ' + currentdate.getDay() + '/' + currentdate.getMonth() + '/' + currentdate.getFullYear() + ' @ ' + currentdate.getHours() + ':' + currentdate.getMinutes() + ':' + currentdate.getSeconds() + '\n');
         done();
       });
   });
